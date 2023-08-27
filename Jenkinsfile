@@ -31,6 +31,7 @@ pipeline {
             steps {
                 echo "Test Stage is in progress"
                 sh 'mvn test'
+                junit '**/target/surefire-reports/*.xml'
             }
             
         }

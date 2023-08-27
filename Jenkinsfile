@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-      mysecret = credentials('mysecret')
+      mysecret = credentials('mysceret')
     }
     
     parameters {
